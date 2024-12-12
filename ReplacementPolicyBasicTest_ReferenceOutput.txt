@@ -1,0 +1,12 @@
+Task 1: Why is MRU better than LRU in this case?
+- LRU hit: 0, miss: 1700, hit ratio: 0.00
+- MRU hit: 1382, miss: 318, hit ratio: 0.81
+
+Task 2: Why is LRU better than MRU in this case?
+- LRU hit: 818, miss: 182, hit ratio: 0.82
+- MRU hit: 237, miss: 763, hit ratio: 0.24
+
+Task 3: Does CLOCK approximate LRU behavior?
+- LRU hit: 834, miss: 166, hit ratio: 0.83
+- CLOCK hit: 818, miss: 182, hit ratio: 0.82
+- MRU hit: 263, miss: 737, hit ratio: 0.26

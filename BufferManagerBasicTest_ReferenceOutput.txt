@@ -1,0 +1,25 @@
+HeapFile contents after initial record insertion:
+Page 0: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Page 1: 17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+
+Found Record - Key: 1, Data: HeapData1                                                                                                                                                                                                                                                 
+Buffer Hits: 1, Misses: 0
+
+Found Record - Key: 17, Data: HeapData17                                                                                                                                                                                                                                                
+Buffer Hits: 3, Misses: 0
+
+Inserting a new record with Key: 33
+Buffer Hits: 3, Misses: 1
+
+Found Record - Key: 1, Data: HeapData1                                                                                                                                                                                                                                                 
+Buffer Hits: 3, Misses: 2
+
+Reloading the HeapFile to test dirty-page handling:
+Page 0: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Page 1: 17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+Page 2: X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X
+
+Reloading the HeapFile after flushing changes:
+Page 0: 1,2,3,4,5,6,7,X,X,X,X,X,X,X,X,X
+Page 1: 17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+Page 2: 33,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X
