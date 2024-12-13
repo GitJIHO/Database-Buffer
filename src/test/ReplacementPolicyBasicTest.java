@@ -1,9 +1,9 @@
 package test;
 
-import replacement.ReplacementPolicy;
+import replacement.ClockReplacementPolicy;
 import replacement.LRUReplacementPolicy;
 import replacement.MRUReplacementPolicy;
-import replacement.ClockReplacementPolicy;
+import replacement.ReplacementPolicy;
 import storage.HeapFile;
 
 import java.io.IOException;

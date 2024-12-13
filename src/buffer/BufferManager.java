@@ -26,9 +26,9 @@ public class BufferManager {
     /**
      * Constructs a BufferManager instance.
      *
-     * @param dataFilename   Path to the data file.
-     * @param poolSize       Maximum number of pages in the buffer pool.
-     * @param policy         Replacement policy to manage the buffer pool.
+     * @param dataFilename Path to the data file.
+     * @param poolSize     Maximum number of pages in the buffer pool.
+     * @param policy       Replacement policy to manage the buffer pool.
      */
     public BufferManager(String dataFilename, int poolSize, ReplacementPolicy policy) {
         this.dataFilename = dataFilename;

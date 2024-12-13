@@ -51,20 +51,20 @@ public class PageFrame {
     }
 
     /**
-     * Sets the dirty flag for this page.
-     *
-     * @param dirty True if the page has been modified, false otherwise.
-     */
-    public void setDirty(boolean dirty) {
-        this.dirty = dirty;
-    }
-
-    /**
      * Checks if the page in this frame is dirty.
      *
      * @return True if the page is dirty, false otherwise.
      */
     public boolean isDirty() {
         return dirty;
+    }
+
+    /**
+     * Sets the dirty flag for this page.
+     *
+     * @param dirty True if the page has been modified, false otherwise.
+     */
+    public void setDirty(boolean dirty) {
+        this.dirty = dirty;
     }
 }

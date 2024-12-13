@@ -285,7 +285,9 @@ public class HeapFile {
     }
 
     // Retrieves the name of the replacement policy
-    public String getReplacementPolicyName() { return bufferManager.getReplacementPolicyName(); }
+    public String getReplacementPolicyName() {
+        return bufferManager.getReplacementPolicyName();
+    }
 
     // Nested class to represent a key-value pair
     private static class SimpleEntry<K, V> {
